@@ -33,7 +33,7 @@ const getAccessToken = () => {
     [LOCALSTORAGE_KEYS.expireTime]: urlParams.get("expires_in"),
   };
   const hasError = urlParams.get("error");
-  console.log(hasError);
+  console.log(urlParams.get("access_token"));
   // If there's an error OR the token in localStorage has expired, refresh the token
   if (
     hasError ||
