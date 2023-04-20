@@ -9,9 +9,8 @@ import {
   TopArtists,
   TopTracks,
 } from "./pages";
-import { accessToken, getCurrentUserProfile, logout } from "./spotify";
+import { accessToken, logout } from "./spotify";
 import { GlobalStyle } from "./styles";
-import { catchErrors } from "./utils";
 
 const StyledLogoutButton = styled.button`
   position: absolute;
